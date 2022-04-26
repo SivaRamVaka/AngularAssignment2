@@ -1,0 +1,25 @@
+
+<h3>Angular 2 ngClass and ngStyle demo</h3>
+
+<div [style.color]="'orange'">style using property syntax</div>
+<div [className]="'xyz'">css class using property syntax</div>
+
+<br /><br />
+
+<input [(ngModel)]="color" />
+<button (click)="size = size + 1">+</button>
+<button (click)="size = size - 1">-</button>
+
+<div [ngStyle]="{'color': color, 'font-size': size + 'px'}">
+  style using ngStyle
+</div>
+
+<input  [(ngModel)]="bgcolor"/>
+<button (click)="size = size + 1">+</button>
+<button (click)="size = size - 1">-</button>
+<div [ngStyle]="{'color': color,'background-color':bgcolor, 'font-size': size + 'px'}">
+  style using ngStyle
+</div>
+
+<br /><br/>
+
